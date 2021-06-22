@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Landing />
+    <Description />
+    <Reasons />
 
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Description from './components/Description.vue'
+import Landing from './components/Landing.vue'
+import Reasons from './components/Reasons.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Landing,
+    Description,
+    Reasons
   }
 }
 </script>
@@ -23,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

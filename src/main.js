@@ -3,9 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
@@ -17,3 +15,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app')
